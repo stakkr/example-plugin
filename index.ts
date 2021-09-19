@@ -1,4 +1,4 @@
-import { delay } from './utils';
+import { delay } from './utils.ts';
 
 /**
  * Takes the Stakkr payload and returns a mutated version of it.
