@@ -11,7 +11,7 @@ type TestPluginPayload = {
 };
 
 export async function testPlugin(payload): Promise<TestPluginPayload> {
-	await delay()
+	await delay(1000); // simulate 1s of network activity.
 	return {
 		...payload,
 		itWorked: true,
