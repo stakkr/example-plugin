@@ -1,8 +1,18 @@
-import { delay } from './utils.ts';
+/**
+ * Delay util.
+ * @param ms number
+ * @returns void
+ */
+function delay(ms: number = 500): Promise<void> {
+	return new Promise((res) => {
+		setTimeout(res, ms)
+	})
+}
 
 /**
  * Takes the Stakkr payload and returns a mutated version of it.
  * @param payload
+ * @returns TestPluginPayload
  */
 
 type TestPluginPayload = {
