@@ -3,9 +3,8 @@
  * @param payload
  */
 export async function testPlugin(payload) {
-	payload = {
+	return {
 		...payload,
 		itWorked: true,
-	}
-	return payload;	
+	};	
 }
