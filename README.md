@@ -7,3 +7,4 @@ This repo contains some examples of Stakkr plugins
 ## Some pointers
 
 - Plugins must be a promise. This can be as simple as always exporting an `async` method.
+- Plugins should always return the payload even if they don't change it at all.
