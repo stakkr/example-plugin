@@ -1,14 +1,9 @@
-type Payload = {
-	[key: string]: any;
-	itWorked: boolean;
-}
-
 /**
  * Test plugin implementation for Stakkr
  * @param payload 
  * @returns payload
  */
-export async function testPlugin(payload: Payload): Promise<Payload> {
+export async function testPlugin(payload) {
 	await delay(1000); // simulate 1s of network activity.
 	return {
 		...payload,
@@ -21,7 +16,7 @@ export async function testPlugin(payload: Payload): Promise<Payload> {
  * @param ms number
  * @returns void
  */
- function delay(ms: number = 500): Promise<void> {
+function delay(ms = 500) {
 	return new Promise((res) => {
 		setTimeout(res, ms)
 	})
