@@ -3,7 +3,7 @@
  * @param payload 
  * @returns payload
  */
-export async function testPlugin(payload) {
+async function testPlugin(payload) {
 	await delay(1000); // simulate 1s of network activity.
 	return {
 		...payload,
@@ -20,4 +20,8 @@ function delay(ms = 500) {
 	return new Promise((res) => {
 		setTimeout(res, ms)
 	})
+}
+
+module.exports = {
+	testPlugin,
 }
