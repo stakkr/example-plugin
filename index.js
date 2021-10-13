@@ -5,6 +5,7 @@
  */
 async function testPlugin(payload) {
 	await delay(1000); // simulate 1s of network activity.
+	console.log("consoling from the vm...");
 	return {
 		...payload,
 		itWorked: true,
