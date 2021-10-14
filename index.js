@@ -9,7 +9,3 @@ async function testPlugin(payload) {
 		itWorked: true,
 	};	
 }
-
-module.exports = {
-	testPlugin,
-}
