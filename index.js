@@ -3,7 +3,7 @@
  * @param payload 
  * @returns payload
  */
-async default async (payload) {
+ async function testPlugin(payload) {
 	console.log('console from sandbox');
 	return {
 		...payload,
