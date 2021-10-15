@@ -3,10 +3,10 @@
  * @param payload 
  * @returns payload
  */
- async function testPlugin(payload) {
+module.exports = async payload => {
 	console.log('console from sandbox');
 	return {
 		...payload,
 		itWorked: true,
-	};	
+	};
 }
